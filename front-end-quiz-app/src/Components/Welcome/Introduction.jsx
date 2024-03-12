@@ -1,3 +1,5 @@
+import ToggleButton from "./ToggleButton";
+
 const Introduction = () => {
   return (
     <div
@@ -5,6 +7,7 @@ const Introduction = () => {
       id="intro-container"
     >
       <div className="flex justify-around w-[100%]">
+        <ToggleButton />
         <div className="px-2 py-3 w-[17rem] text-left">
           <h1 className="text-4xl">
             Welcome to the <span className="font-bold">Frontend Quiz!</span>
