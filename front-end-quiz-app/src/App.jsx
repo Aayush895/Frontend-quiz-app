@@ -1,4 +1,3 @@
-import './App.css'
 import Introduction from './Components/Welcome/Introduction'
 
 function App() {

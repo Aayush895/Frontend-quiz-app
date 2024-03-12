@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#intro-container {
+  background-image: url('../assets/images/pattern-background-desktop-light.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  background-color: #f4f6fa;
+}
+
+.btn {
+  position: relative;
+  z-index: 2;
+}
