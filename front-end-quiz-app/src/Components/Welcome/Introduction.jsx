@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ToggleButton from "./ToggleButton";
-import HtmlQuiz from "../HTML/HtmlQuiz";
+import HtmlQuiz from "../Html/HtmlQuiz";
+import Container from "../Utils/Container";
 
 const Introduction = () => {
   const [quiz, setQuiz] = useState({
@@ -10,41 +11,24 @@ const Introduction = () => {
     access: false,
   });
 
-  const handleQuiz = (e) => {
+  function handleQuiz(e) {
     if (e.target.innerText == "HTML") {
       setQuiz({ ...quiz, html: true });
+    } else if (e.target.innerText == "CSS") {
+      setQuiz({ ...quiz, html: false, css: true });
+    } else if (e.target.innerText == "Javascript") {
+      setQuiz({ ...quiz, html: false, css: false, js: true });
     } else {
-      setQuiz({ ...quiz, html: false });
+      setQuiz({ ...quiz, html: false, css: false, js: false, access: true });
     }
-
-    if (e.target.innerText == "CSS") {
-      setQuiz({ ...quiz, css: true });
-    } else {
-      setQuiz({ ...quiz, css: false });
-    }
-
-    if (e.target.innerText == "Javascript") {
-      setQuiz({ ...quiz, js: true });
-    } else {
-      setQuiz({ ...quiz, js: false });
-    }
-
-    if (e.target.innerText == "Accessibility") {
-      setQuiz({ ...quiz, accesss: true });
-    } else {
-      setQuiz({ ...quiz, access: false });
-    }
-  };
+  }
 
   if (quiz.html) {
-    return <HtmlQuiz subjectName={"HTML"} />
+    return <HtmlQuiz />;
   }
 
   return (
-    <div
-      className="flex items-center justify-around border border-black h-[100vh]"
-      id="intro-container"
-    >
+    <Container>
       <div className="flex justify-around w-[100%]">
         <ToggleButton />
         <div className="px-2 py-3 w-[17rem] text-left">
@@ -57,6 +41,7 @@ const Introduction = () => {
         </div>
 
         <div>
+
           <div
             className="btn flex items-center justify-start w-[24rem] px-2 py-3 rounded-2xl shadow-lg bg-white cursor-pointer hover:scale-105 duration-500 ease-in-out"
             onClick={handleQuiz}
@@ -114,7 +99,7 @@ const Introduction = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 export default Introduction;
