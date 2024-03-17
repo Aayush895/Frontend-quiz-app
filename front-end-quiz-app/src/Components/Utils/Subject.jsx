@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from 'prop-types'
 
 const Subject = ({ subject, src }) => {
   return (
@@ -8,5 +8,10 @@ const Subject = ({ subject, src }) => {
     </div>
   );
 };
+
+Subject.propTypes = {
+  subject: PropTypes.string,
+  src: PropTypes.string.isRequired
+}
 
 export default Subject;

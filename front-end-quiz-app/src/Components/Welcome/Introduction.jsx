@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ToggleButton from "./ToggleButton";
+import ToggleButton from "../Utils/ToggleButton";
 import HtmlQuiz from "../Html/HtmlQuiz";
 import Container from "../Utils/Container";
 

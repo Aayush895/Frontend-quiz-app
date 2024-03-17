@@ -1,14 +1,18 @@
-import React from "react";
+import PropTypes from 'prop-types'
 
-const Container = (props) => {
+const Container = ({children}) => {
   return (
     <div
       className="flex items-center justify-around border border-black h-[100vh]"
       id="intro-container"
     >
-      {props.children}
+      {children}
     </div>
   );
 };
+
+Container.propTypes =  {
+  children: PropTypes.element.isRequired
+}
 
 export default Container;
