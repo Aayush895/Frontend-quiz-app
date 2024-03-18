@@ -19,6 +19,7 @@ const HtmlQuiz = () => {
     setQues(jsonData?.quizzes[0])
   }
 
+  // Put the handlequestion function inside the setTimeout function in react in order to update the quesNumber state after some specified time. The setTimeout function will be inside the useEffect hook
   const handleQuestion = () => {
     setQuesNumber(quesNumber + 1)
   }
