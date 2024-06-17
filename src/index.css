@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: "Rubik", sans-serif;
+  overflow: hidden;
+}
+
+#welcome-container {
+  background-image: url('../starter-code/assets/images/pattern-background-desktop-light.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#welcome-dark-container {
+  background-image: url(../starter-code/assets/images/pattern-background-desktop-dark.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #313e51;
+  color: white;
+}
+
+.para-color {
+  color: #626c7f;
+}
+
+.para-dark-color {
+  color: #ABC1E1;
+}
+
+.card-dark {
+  background-color: #3b4d66;
+}
+
+#correctOption {
+  border: 1px solid #26d782 !important;
+}
+
+#correctOptionContent {
+  background-color: #26d782 !important;
+  color: #fff !important;
+}
+
+.wrongOption {
+  border: 1px solid #ee5454 !important;
+}
+
+.wrongOptionContent {
+  background-color: #ee5454 !important;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  #welcome-container {
+    background-image: url('../starter-code/assets/images/pattern-background-tablet-light.svg');
+    height: 120vh;
+  }
+
+  #welcome-dark-container {
+    background-image: url('../starter-code/assets/images/pattern-background-tablet-dark.svg');
+    height: 120vh;
+  }
+}
+
+@media (max-width: 428px) {
+  #welcome-container {
+    background-image: url('../starter-code/assets/images/pattern-background-mobile-light.svg');
+    background-size: contain;
+    height: 150vh;
+  }
+
+  #welcome-dark-container {
+    background-image: url('../starter-code/assets/images/pattern-background-mobile-dark.svg');
+    background-size: contain;
+    height: 150vh;
+  }
+}
+
+@media (max-width: 390px) {
+  #welcome-container, #welcome-dark-container {
+    height: 165vh;
+  }
+}
+
+@media (max-width: 375px) {
+  #welcome-container, #welcome-dark-container {
+    height: 180vh;
+  }
+}
+
+@media (max-width: 320px) {
+  #welcome-container, #welcome-dark-container {
+    height: 230vh;
+  }
+}
