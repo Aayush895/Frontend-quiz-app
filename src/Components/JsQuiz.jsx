@@ -16,7 +16,7 @@ const JsQuiz = ({
   settoggleDark,
   setquizType,
 }) => {
-  const jsQuiz = useQuizData('/public/data.json')
+  const jsQuiz = useQuizData('/data.json')
 
   const [quesCounter, setquesCounter] = useState(0)
   const [optionSelected, setoptionSelected] = useState({

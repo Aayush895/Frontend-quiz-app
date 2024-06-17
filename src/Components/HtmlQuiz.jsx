@@ -28,7 +28,7 @@ const HtmlQuiz = ({
   const [selectedOption, setselectedOption] = useState(null)
   const [errorMsg, seterrorMsg] = useState('')
 
-  const htmlQuiz = useQuizData('/public/data.json')
+  const htmlQuiz = useQuizData('/data.json')
 
   const handleoptionSelection = (idx) => {
     setoptionSelected((prevState) => {

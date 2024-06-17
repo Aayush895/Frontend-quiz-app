@@ -16,7 +16,7 @@ const AccessibilityQuiz = ({
   settoggleDark,
   setquizType
 }) => {
-  const accessQuiz = useQuizData('/public/data.json')
+  const accessQuiz = useQuizData('/data.json')
   const [quesCounter, setquesCounter] = useState(0)
   const [optionSelected, setoptionSelected] = useState({
     1: false,
