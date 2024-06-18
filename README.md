@@ -48,8 +48,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github link](https://github.com/Aayush895/Frontend-quiz-app)
+- Live Site URL: [Vercel link](https://frontend-quiz-3l9hyz7yz-aayush895s-projects.vercel.app/)
 
 ## My process
 
