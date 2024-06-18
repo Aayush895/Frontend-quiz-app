@@ -138,7 +138,7 @@ const AccessibilityQuiz = ({
                   }
                   toggleDark={toggleDark}
                 />
-                <div>
+                <div className="relative">
                   {accessQuiz.quizzes[3].questions[quesCounter].options.map(
                     (option, idx) => (
                       <OptionCard

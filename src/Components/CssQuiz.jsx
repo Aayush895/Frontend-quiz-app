@@ -136,7 +136,7 @@ const CssQuiz = ({
                   question={cssQuiz.quizzes[1].questions[quesCounter].question}
                   toggleDark={toggleDark}
                 />
-                <div>
+                <div className="relative">
                   {cssQuiz.quizzes[1].questions[quesCounter].options.map(
                     (option, idx) => (
                       <OptionCard

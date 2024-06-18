@@ -137,7 +137,7 @@ const JsQuiz = ({
                   question={jsQuiz.quizzes[2].questions[quesCounter].question}
                   toggleDark={toggleDark}
                 />
-                <div>
+                <div className='relative'>
                   {jsQuiz.quizzes[2].questions[quesCounter].options.map(
                     (option, idx) => (
                       <OptionCard
@@ -173,7 +173,7 @@ const JsQuiz = ({
                   {errorMsg ? (
                     <p className="flex items-center text-red-500 justify-center absolute right-[50%] translate-x-[50%] sm:w-[100%]">
                       <span>
-                        <img src="../../starter-code/assets/images/icon-incorrect.svg" />
+                        <img src="/icon-incorrect.svg" />
                       </span>{' '}
                       {errorMsg}
                     </p>
